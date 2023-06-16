@@ -24,5 +24,5 @@ $ php artisan test
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/mzBu8U1.png)
+![](https://i.imgur.com/sCcDd4k.png)
 > 輕鬆將期望加入到測試生態系統
