@@ -1,4 +1,4 @@
-# Laravel 10 使用特定期望插件進行優雅測試
+# Laravel 11 使用特定期望插件進行優雅測試
 
 引入 defstudio 的 pest-plugin-laravel-expectations 套件來擴增使用特定期望插件進行優雅測試，這個插件提供包含認證、集合、資料庫、例外、模型、回應等功能不同預期。
 
@@ -24,5 +24,5 @@ $ php artisan test
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/sCcDd4k.png)
+![](https://i.imgur.com/WiNBMR4.png)
 > 輕鬆將期望加入到測試生態系統
