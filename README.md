@@ -1,6 +1,6 @@
-# Laravel 11 使用特定期望插件進行優雅測試
+# Laravel 11 使用插件進行優雅測試
 
-引入 defstudio 的 pest-plugin-laravel-expectations 套件來擴增使用特定期望插件進行優雅測試，這個插件提供包含認證、集合、資料庫、例外、模型、回應等功能不同預期。
+引入 lukeraymonddowning 的 pest-plugin-larastrap 套件來擴增使用插件進行優雅測試，解決在 Pest 編譯階段還沒有啟動 Laravel 而發生古怪的狀況。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -16,6 +16,18 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 執行 __Artisan__ 指令的 __test__ 來執行測試。
 ```sh
 $ php artisan test
@@ -24,5 +36,5 @@ $ php artisan test
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/WiNBMR4.png)
-> 輕鬆將期望加入到測試生態系統
+![](https://i.imgur.com/oTWurgO.png)
+> 將不需認證的路由進行 HTTP 請求功能測試
